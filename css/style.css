@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: rgb(252, 26, 180);
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
