@@ -1,3 +1,33 @@
 .card-container{
-    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+    &:hover{
+        border: 1px solid rgba(125, 5, 134, 0.756);
+    }
+    figure{
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+    div{
+        @include flex(row, nowrap, space-between, center,0);
+        padding: 10px;
+        height: 2em;
+        p{
+            width: 4em;
+            font-size: 18px;
+            font-family: $tipografiaQuinta; 
+            margin: 0px;
+        }
+        h4{
+            width: 100%;
+             font-family: $tipografiaSegunda;
+             font-size: 20px;
+             margin: 0px;
+        }      
+    }
 }

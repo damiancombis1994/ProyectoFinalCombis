@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Ñuke Mapu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <head>
+        <title>Ñuke Mapu</title>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
 <body>
     <header>
-        <div>
-            <h1><a href="#">Nuke Mapu</a></h1>
+        <div class="boxNav">
+            <h1><a href="../index.html">Nuke Mapu</a></h1>
             <div>
                 <section>
-                    <a class="iconNav" href="#"><img src="./assets/facebook.svg" alt=""></a>
-                    <a class="iconNav" href="#"><img src="./assets/instagram.svg" alt=""></a>
-                    <a class="iconNav" href="#"><img src="./assets/marker-32.ico" alt=""></a>
+                    <a class="iconNav" href="#"><img src="../assets/facebook.svg" alt=""></a>
+                    <a class="iconNav" href="#"><img src="../assets/instagram.svg" alt=""></a>
+                    <a class="iconNav" href="#"><img src="../assets/marker-32.ico" alt=""></a>
                 </section>
             </div>
         </div>
         <nav>
             <ul class="enlacesNav">
                 <li>
-                    <a href="./pages/tinto.html">Tinto</a>
+                    <a href="./tinto.html">Tinto</a>
                 </li>
                 <li>
-                    <a href="./pages/blanco.html">Blanco</a>
+                    <a href="./blanco.html">Blanco</a>
                 </li>
                 <li>
-                    <a href="./pages/whisky.html">Whisky</a>
+                    <a href="./whisky.html">Whisky</a>
                 </li>
                 <li>
-                    <a href="./pages/vodka.html">Vodka</a>
+                    <a href="./vodka.html">Vodka</a>
                 </li>
                 <li>
-                    <a href="./pages/gintonic.html">Gin Tonic</a>
+                    <a href="./gintonic.html">Gin Tonic</a>
                 </li>
                 <li>
-                    <a href="./pages/contacto.html">Contacto</a>
+                    <a href="#">Contacto</a>
                 </li>
             </ul>
             <div class="dropdown btn-nav">
@@ -46,71 +46,34 @@
                  Categorias
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./pages/tinto.html">Tinto</a></li>
-                  <li><a class="dropdown-item" href="./pages/blanco.html">Blanco</a></li>
-                  <li><a class="dropdown-item" href="./pages/whisky.html">Whisky</a></li>
-                  <li><a class="dropdown-item" href="./pages/vodka.html">Vodka</a></li>
-                  <li><a class="dropdown-item" href="./pages/gintonic.html">Gin Tonic</a></li>
-                  <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                  <li><a class="dropdown-item" href="./tinto.html">Tinto</a></li>
+                  <li><a class="dropdown-item" href="./blanco.html">Blanco</a></li>
+                  <li><a class="dropdown-item" href="./whisky.html">Whisky</a></li>
+                  <li><a class="dropdown-item" href="./vodka.html">Vodka</a></li>
+                  <li><a class="dropdown-item" href="./gintonic.html">Gin Tonic</a></li>
+                  <li><a class="dropdown-item" href="#">Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section>
-            <article class="container-fluid marcasHome">
-                <h2>Nuestras marcas</h2>
-                <div>
-                    <i class="material-icons">arrow_back_ios</i>
-                    <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3060860_f.jpg" alt="">
-                    <img src="https://bodegasconventodelasclaras.com/wp-content/uploads/vinos-tienda-bendiciones.jpg" alt="">
-                    <img src="https://jumbo.com.do/pub/media/catalog/product/cache/e5145626c3f3275a7b4b1f65af9095fa/2/2/2219792-a.jpg" alt="">
-                    <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3063896_f.jpg" alt="">
-                    <i class="material-icons">arrow_forward_ios</i>
-                </div>
-            </article>
-        </section>
+        <section class="boxContacto">
+            <div>
+                <img src="https://formatesommeliers.com.ar/wp-content/uploads/2020/06/INTRODUCCION-AL-MUNDO-DEL-VINO-con-cata.jpg.webp" alt="">
+            </div>
+            <div class="boxFormContacto">
+                <form action="">
+                    <h2>Complete el formulario y le responderemos a la brevedad
+                    </h2>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="number" name="telefono" placeholder="Telefono">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <imput class="btnEnviarForm" type="submit" value="Enviar">Enviar</imput>
+                </form>
 
-        <section class="container-fluid bannerHome">
-            <img class="container-fluid" src="./assets/camion-ruta.webp" alt="">
+            </div>
         </section>
-
-        <section class="container-fluid">
-            <article class="promocionesHome">
-                <h2><a href="./pages/promociones.html">Promociones</a></h2>
-                <div>
-                    <i class="material-icons">arrow_back_ios</i>
-                    <article class="dArticle">
-                        <figure>
-                            <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3060860_f.jpg" alt="">
-                        </figure>
-                        <div class="boxPromoHome">
-                        <h3>Absolut vodka</h4>
-                        <p>$3500</p>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3060860_f.jpg" alt="">
-                        </figure>
-                        <div class="boxPromoHome">
-                        <h3>Absolut vodka</h4>
-                        <p>$3500</p>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3060860_f.jpg" alt="">
-                        </figure>
-                        <div class="boxPromoHome">
-                        <h3>Absolut vodka</h4>
-                        <p>$3500</p>
-                        </div>
-                    </article>
-                    <i class="material-icons">arrow_forward_ios</i>
-                </div>
-            </article>
-        </section> 
     </main>
     <footer>
         <h2>Contactanos</h2>
@@ -156,10 +119,7 @@
     </footer>
 
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

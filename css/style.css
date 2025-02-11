@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kameron:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +18,390 @@ ul {
   list-style: none;
 }
 
-h1 {
-  color: rgb(252, 26, 180);
-  background-color: blue;
+header div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  height: auto;
+  background-color: #000000;
+}
+header div h1 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  flex-basis: 10em;
+  font-family: "Playfair Display SC", serif;
+}
+header div h1 a {
+  text-decoration: none;
+  color: #fafafa;
+}
+header div div {
+  width: 9.375rem;
+  height: 3.75rem;
+}
+header div div section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+header div div section a {
+  text-decoration: none;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+header div div section a img {
+  width: 100%;
+  height: 100%;
+}
+header div div section:last-child {
+  margin-left: -0.4375rem;
+}
+header .enlacesNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.1875rem;
+  background-color: #e2e2c9;
+  margin: 0rem;
+  padding: 10px;
+}
+header .enlacesNav li {
+  overflow: hidden;
+}
+header .enlacesNav li a {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+header .enlacesNav li:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+header .btn-nav {
+  display: none;
+}
+
+.marcasHome {
+  height: auto;
+  width: 96%;
+  margin-top: 0.625rem;
+  background-color: #000000;
+  border-radius: 0.75rem;
+}
+.marcasHome h2 {
+  text-align: center;
+  font-family: Mulish, sans-serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0.625rem 0rem 0rem 0rem;
+  color: white;
+}
+.marcasHome div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+}
+.marcasHome div i {
+  font-size: 1.5em;
+  color: #fffefe;
+}
+.marcasHome div img {
+  flex-grow: 1;
+  object-fit: cover;
+  height: auto;
+  width: 200px;
+  border: solid 0.125rem #000;
+  border-radius: 0.75rem;
+  padding: 10px;
+}
+
+.bannerHome {
+  height: auto;
+  margin-top: 0.625rem;
+}
+.bannerHome img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.promocionesHome {
+  height: auto;
+  margin-top: 0.625rem;
+  margin-bottom: 0.9375rem;
+  border: 3px solid #000000;
+  border-radius: 0.75rem;
+  background-color: rgb(0, 0, 0);
+}
+.promocionesHome h2 {
+  text-align: center;
+  font-family: Mulish, sans-serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0.625rem 0rem;
+}
+.promocionesHome h2 a {
+  text-decoration: none;
+  color: rgb(251, 249, 249);
+}
+.promocionesHome div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.promocionesHome div i {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.promocionesHome div article {
+  width: 18.75rem;
+  height: auto;
+}
+.promocionesHome div article figure {
+  margin: 0;
+}
+.promocionesHome div article figure img {
+  border: 2px solid #000000;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.promocionesHome div article .boxPromoHome {
+  display: flex;
+  position: relative;
+  height: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.promocionesHome div article .boxPromoHome h3 {
+  font-family: Mulish, sans-serif;
+  position: absolute;
+  left: 0%;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0rem 0rem 0rem 0.125rem;
+  color: #fafafa;
+}
+.promocionesHome div article .boxPromoHome p {
+  position: absolute;
+  right: 0%;
+  font-family: Mulish, sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0rem 0.125rem 0rem 0rem;
+  color: #fafafa;
+}
+
+footer {
+  height: 20rem;
+  background-color: rgb(0, 0, 0);
+}
+footer h2 {
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin-top: 0.0625rem;
+  margin-bottom: 0.625rem;
+  color: white;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer section div {
+  width: 21.875rem;
+  height: 12.5rem;
+  border: solid 0.0625rem #000;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+footer section div svg {
+  margin-top: 0.625rem;
+  color: white;
+}
+footer section div h3 {
+  font-family: "Inika", serif;
+  margin: 0.625rem 0.125rem;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+}
+footer section div p {
+  font-family: "Inika", serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0.625rem 0.125rem;
+  color: white;
+}
+footer section .boxFooterActive svg {
+  margin-top: 0.625rem;
+}
+footer section .boxFooterActive h3 {
+  font-family: "Inika", serif;
+  margin: 2.1875rem 0.125rem;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: white;
+}
+footer h4 {
+  color: white;
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin-top: 0.625rem;
+}
+
+.mainCatalogo {
+  margin-top: 1em;
+}
+.mainCatalogo .boxCatalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-bottom: 0.9375rem;
+}
+
+.boxContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 44.5rem;
+  background-color: rgb(0, 0, 0);
+}
+.boxContacto div {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.boxContacto div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.boxContacto .boxFormContacto form {
+  display: flex;
+  color: #fafafa;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.9375rem;
+}
+.boxContacto .boxFormContacto form h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5625rem;
+  font-family: "Inika", serif;
+}
+.boxContacto .boxFormContacto form input {
+  font-family: "Inika", serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-bottom: #e2e2c9;
+  width: 43.75rem;
+  font-size: 1.5625rem;
+  margin: 0.625rem 0rem;
+  padding: 0.9375rem 0rem;
+}
+.boxContacto .boxFormContacto form textarea {
+  font-family: "Inika", serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.5625rem;
+  height: 17.5rem;
+  width: 43.75rem;
+  margin: 0.625rem 0rem;
+}
+.boxContacto .boxFormContacto form .btnEnviarForm {
+  color: black;
+  background-color: #fafafa;
+  width: 13rem;
+  height: 1.875rem;
+  font-family: "Inika", serif;
+  display: block;
+  text-align: center;
+  padding: 0.0625rem 0.9375rem;
+  margin: 0.5rem 0rem;
+}
+
+.titlePromociones {
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0.625rem 0rem 0rem 0rem;
+}
+
+.promocionesHome h3 {
+  text-align: left;
+  font-family: "Inika", serif;
+  font-size: 1.875rem;
+  font-weight: 300;
+  margin: 0rem 0rem 0.625rem 0.625rem;
+  color: #ffffff;
+}
+.promocionesHome h3 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.titlePromocionesCat {
+  text-align: center;
+  font-family: "Inika", serif;
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 0.625rem 0rem 0.625rem 0rem;
+}
+
+.card-container {
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card-container:hover {
+  border: 1px solid rgba(125, 5, 134, 0.756);
+}
+.card-container figure img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.card-container div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 10px;
+  height: 2em;
+}
+.card-container div p {
+  width: 4em;
+  font-size: 18px;
+  font-family: "roboto", serif;
+  margin: 0px;
+}
+.card-container div h4 {
+  width: 100%;
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

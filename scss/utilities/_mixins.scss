@@ -1,0 +1,22 @@
+@mixin flex($row, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $row;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;  
+}
+@mixin grid($columns, $rows, $gap){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+}
+@mixin boxmodel($width, $height, $margin, $padding, $border, $radius){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+    border: $border;
+    border-radius: $radius;
+}
