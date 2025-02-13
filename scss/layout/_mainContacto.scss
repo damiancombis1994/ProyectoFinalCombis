@@ -15,7 +15,7 @@
     .boxFormContacto{
         form{
             @include flex(column, nowrap, center, center, 5px);
-            color: map-get($colores, color2);
+            color: map-get($colores,color2);
             height: 100%; 
             margin-top: .9375rem;
             h2{

@@ -1,0 +1,99 @@
+.boxItemDetail{
+    width: 100%;
+    margin: 10px 0px;  
+}
+.itemDetail{
+    @include grid(repeat(2, 1fr), 1fr, 10px);
+    height: 450px;
+    div:nth-child(1) { 
+        height: 450px;
+        figure{
+            height: 100%;
+            width: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        } 
+    } 
+    div:nth-child(2) {
+        @include flex(column, nowrap, space-evenly, center, 10px);
+        background-color: map-get($colores, color1);
+        height: 450px;
+        h2{
+            @include boxmodel(auto, auto, 0px, 5px, none, 0px);
+            color: map-get($colores,color2);
+            font-family: $tipografiaPrimera;
+            text-align: center;
+            font-size: 1.5em;
+            transform: translateY(15px);
+        }
+        h3{
+            @include boxmodel(auto, 40px,0px 10px, 10px 0px,none, 0px); 
+            color: map-get($colores,color2);   
+            font-family: $tipografiaTercera;
+            font-size: 20px;
+            align-self: flex-start;
+            transform: translateY(10px);
+           
+        }
+        .detailProduct{
+            @include boxmodel(550px,160px, 0px 10px, 1px,none, 0px);
+            color: map-get($colores,color2);
+            text-align: center;
+            align-content: center;
+            font-size: 18px;
+            font-family: $tipografiaTercera;
+            transform: translateY(-10px);
+        }
+        h4{
+            @include boxmodel(auto, auto, 0px 10px, 5px, none, 0px);   
+            color: map-get($colores, color2);  
+            font-family: $tipografiaCuarta;
+            transform: translateY(-15px);
+            font-size: 20px;
+            text-align: center;
+            align-self: center;
+        }
+        .btnItemDetail{
+            @include grid(1fr 2fr, 1fr, 0px);
+            transform: translateX(18px);
+            div:nth-child(1){
+                @include boxmodel(100px, 40px, 10px , 5px, none, 0px);
+                transform: translateX(10px);
+                justify-self: center;
+                button{
+                    @include boxmodel(30px,30px, 0px, 0px, none, 2px); 
+                    text-align: center;
+                    align-content: center;
+                   
+                }
+                span{
+                    margin: 0px 5px;
+                    color: map-get($colores, color2);
+                    border: none;
+                    width: 10px;
+                    font-size: 20px;
+                    align-content: center;
+                }
+            }
+            div:nth-child(2){
+                @include boxmodel(200px, 40px, 10px , 5px, none, 0px);
+                justify-self: center;
+                button{
+                    @include boxmodel(auto, auto, 0px , 3px, none, 2px);
+                    font-size: 18px;
+                    font-family: $tipografiaCuarta;
+                }
+            }
+        }
+        .detailCantSend{ 
+            @include boxmodel(auto, auto, 0px 10px, 0px, none, 0px);
+            color: map-get($colores, color3);
+            font-family: $tipografiaTercera;
+            font-size: 15px;
+            
+        }         
+    } 
+}

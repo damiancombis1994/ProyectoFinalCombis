@@ -419,4 +419,158 @@ footer h4 {
   margin: 0px;
 }
 
+.boxItemDetail {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.itemDetail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+  height: 450px;
+}
+.itemDetail div:nth-child(1) {
+  height: 450px;
+}
+.itemDetail div:nth-child(1) figure {
+  height: 100%;
+  width: 100%;
+}
+.itemDetail div:nth-child(1) figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.itemDetail div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  height: 450px;
+}
+.itemDetail div:nth-child(2) h2 {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+  border: none;
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  font-size: 1.5em;
+  transform: translateY(15px);
+}
+.itemDetail div:nth-child(2) h3 {
+  width: auto;
+  height: 40px;
+  margin: 0px 10px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  font-family: "inika", sans-serif;
+  font-size: 20px;
+  align-self: flex-start;
+  transform: translateY(10px);
+}
+.itemDetail div:nth-child(2) .detailProduct {
+  width: 550px;
+  height: 160px;
+  margin: 0px 10px;
+  padding: 1px;
+  border: none;
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  align-content: center;
+  font-size: 18px;
+  font-family: "inika", sans-serif;
+  transform: translateY(-10px);
+}
+.itemDetail div:nth-child(2) h4 {
+  width: auto;
+  height: auto;
+  margin: 0px 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  font-family: "Kameron", sans-serif;
+  transform: translateY(-15px);
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+}
+.itemDetail div:nth-child(2) .btnItemDetail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+  transform: translateX(18px);
+}
+.itemDetail div:nth-child(2) .btnItemDetail div:nth-child(1) {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 0px;
+  transform: translateX(10px);
+  justify-self: center;
+}
+.itemDetail div:nth-child(2) .btnItemDetail div:nth-child(1) button {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  border-radius: 2px;
+  text-align: center;
+  align-content: center;
+}
+.itemDetail div:nth-child(2) .btnItemDetail div:nth-child(1) span {
+  margin: 0px 5px;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 10px;
+  font-size: 20px;
+  align-content: center;
+}
+.itemDetail div:nth-child(2) .btnItemDetail div:nth-child(2) {
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 0px;
+  justify-self: center;
+}
+.itemDetail div:nth-child(2) .btnItemDetail div:nth-child(2) button {
+  width: auto;
+  height: auto;
+  margin: 0px;
+  padding: 3px;
+  border: none;
+  border-radius: 2px;
+  font-size: 18px;
+  font-family: "Kameron", sans-serif;
+}
+.itemDetail div:nth-child(2) .detailCantSend {
+  width: auto;
+  height: auto;
+  margin: 0px 10px;
+  padding: 0px;
+  border: none;
+  border-radius: 0px;
+  color: rgba(136, 136, 121, 0.7411764706);
+  font-family: "inika", sans-serif;
+  font-size: 15px;
+}
+
 /*# sourceMappingURL=style.css.map */
