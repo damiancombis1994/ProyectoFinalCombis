@@ -103,9 +103,52 @@
     .dArticle{
         display: none;
     }
-
-
-
-
-
+    .mainItemDetail{
+        height: 910px;
+        .boxItemDetail{
+            .itemDetail{
+                @include grid(1fr, 1fr 2fr, 0px);
+                div:nth-child(1) {
+                    figure{
+                        img{
+                            object-fit: contain;
+                        }
+                    }
+                }
+                div:nth-child(2) {
+                    h2{
+                        transform: translateY(-10px);
+                        font-size: 17px;
+                    }
+                    h3{
+                        transform: translateY(-40px);
+                        height: 30px;
+                        font-size: 16px;
+                    }
+                    .detailProduct{
+                        transform: translateY(-50px);
+                        width: 18.75rem;
+                        height: 100px;   
+                    }
+                    h4{
+                        transform: translateY(10px);
+                    }
+                    .btnItemDetail{
+                        div:nth-child(1){
+                            width: 100px;
+                            button{
+                                padding: 0px;
+                            }
+                        }
+                        div:nth-child(2){
+                            width: 130px;
+                            button{
+                                font-size: 16px;
+                            }
+                        }
+                    }   
+            }
+        }
+    }
+  }
 }

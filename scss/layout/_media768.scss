@@ -100,5 +100,18 @@
    .promocionesHome h3{
     font-size: 20px;
    }
+   main{
+    .boxItemDetail{
+        .itemDetail{
+            div:nth-child(1) {
+                figure{
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+   }
 
 }

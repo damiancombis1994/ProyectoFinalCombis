@@ -217,6 +217,7 @@ header .btn-nav {
 
 footer {
   height: 20rem;
+  margin-top: auto;
   background-color: rgb(0, 0, 0);
 }
 footer h2 {
@@ -445,6 +446,24 @@ footer h4 {
   .mainCatalogo .boxCatalogo {
     grid-template-columns: repeat(3, 1fr);
   }
+  main .boxItemDetail .itemDetail div:nth-child(2) h2 {
+    font-size: 18px;
+  }
+  main .boxItemDetail .itemDetail div:nth-child(2) h3 {
+    font-size: 17px;
+  }
+  main .boxItemDetail .itemDetail div:nth-child(2) .detailProduct {
+    width: 350px;
+    height: 160px;
+    margin: 0px 10px;
+    padding: 1px;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+  }
+  main .boxItemDetail .itemDetail div:nth-child(2) h4 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 768px) {
   header nav .enlacesNav {
@@ -528,6 +547,9 @@ footer h4 {
   .promocionesHome h3 {
     font-size: 20px;
   }
+  main .boxItemDetail .itemDetail div:nth-child(1) figure img {
+    object-fit: cover;
+  }
 }
 @media (max-width: 550px) {
   header div {
@@ -598,6 +620,47 @@ footer h4 {
   }
   .dArticle {
     display: none;
+  }
+  .mainItemDetail {
+    height: 910px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 0px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(1) figure img {
+    object-fit: contain;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) h2 {
+    transform: translateY(-10px);
+    font-size: 17px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) h3 {
+    transform: translateY(-40px);
+    height: 30px;
+    font-size: 16px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .detailProduct {
+    transform: translateY(-50px);
+    width: 18.75rem;
+    height: 100px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) h4 {
+    transform: translateY(10px);
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .btnItemDetail div:nth-child(1) {
+    width: 100px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .btnItemDetail div:nth-child(1) button {
+    padding: 0px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .btnItemDetail div:nth-child(2) {
+    width: 130px;
+  }
+  .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .btnItemDetail div:nth-child(2) button {
+    font-size: 16px;
   }
 }
 @media (max-width: 400px) {
@@ -682,7 +745,7 @@ footer h4 {
 .itemDetail div:nth-child(1) figure img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .itemDetail div:nth-child(2) {
   display: flex;
