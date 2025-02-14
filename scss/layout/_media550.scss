@@ -1,0 +1,111 @@
+@media(max-width: 550px){
+   header{ 
+     div{
+        height: 4.375rem;
+         h1{
+            font-size: 1.375rem;
+            text-align: left;
+            width: auto;
+         }
+         div{
+             display: none;
+         }
+     }
+     nav{
+        .enlacesNav{
+            display: none;
+        }
+        .btn-nav{
+            height: auto;
+            display: block;   
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+        }
+     }
+   }
+   main{
+    section{
+        &:first-child{
+            .marcasHome{
+                h2{
+                    font-size: 1.2em;
+                }
+                div{
+                    gap: .1875rem;
+                    img{
+                        width: 80px;
+                    }
+                }
+                
+            }
+        }
+        &:nth-child(3){
+            article{
+                div{
+                    .dArticle{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+   }
+   .mainCatalogo{
+     .boxCatalogo{
+        gap: 10px;
+        a{
+            .card-container{
+                width: 100%;
+                figure{
+                    img{
+                        object-fit: cover;
+                    }
+                }
+                div{
+                    p{
+                        width: auto;
+                        font-size: 16px;
+                    }
+                    h4{
+                        width: auto;
+                        font-size: 16px;
+                    }
+                }
+               }
+        }
+     }
+   }
+   footer{
+     section{
+        .boxFooter{
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+     }
+   }
+   .titlePromociones{
+    font-size: 20px;
+   }
+   .promocionesHome{
+       h3{
+         font-size: 16px;
+       }
+    }
+    .dArticle{
+        display: none;
+    }
+
+
+
+
+
+}

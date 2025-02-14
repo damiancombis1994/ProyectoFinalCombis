@@ -6,30 +6,22 @@
     border-radius: .75rem;
     h2{
         text-align: center;
-        font-family: Mulish, sans-serif;
+        font-family: $tipografiaSegunda;
         font-size: 2.5em;
         font-weight: 300;
         margin: .625rem 0rem 0rem 0rem;
         color: white;
     }
     div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        gap: .625rem;
+        @include flex(row, nowrap, space-around, center, .625rem);
         i{
             font-size: 1.5em;
             color: #fffefe;
         }
         img{
+            @include boxmodel(200px, auto, 0px, 10px, none, 0px);
             flex-grow: 1;
             object-fit: cover;
-            height: auto;
-            width: 200px;
-            border: solid .125rem #000;
-            border-radius: .75rem;
-            padding: 10px;
         }
     }
 }
@@ -43,28 +35,20 @@
     }
 }
 .promocionesHome { 
-    height: auto;
-    margin-top: .625rem;
-    margin-bottom: .9375rem;
-    border: 3px solid #000000;
-    border-radius: .75rem;
-    background-color: rgb(0, 0, 0);
+    @include boxmodel(auto, auto, 10px, 10px, none, .75rem);
+    background-color: map-get($colores, color1);
     h2 {
         text-align: center;
-        font-family: Mulish, sans-serif;
-        font-size: 2.5em;
+        font-family: $tipografiaSegunda;
         font-weight: 300;
+        font-size: 2.5em;
         margin: .625rem 0rem;
         a {
-            text-decoration: none;
             color: rgb(251, 249, 249);
         }
     }
     div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;  
-        align-items: center; 
+        @include flex(row, nowrap, space-around, center, .625rem);
         margin-bottom:10px; 
         i {
             font-size: 1.5em;
@@ -76,22 +60,19 @@
             figure {
                 margin: 0; 
                 img {
-                    border: 2px solid #000000;
                     object-fit: cover;
                     height: 100%;
                     width: 100%;
                 }
             }
             .boxPromoHome {
-                display: flex;
+                @include flex(row, nowrap, space-between, center, .625rem);
                 position: relative;
                 height: 1.25rem;
-                justify-content: space-between;
-                align-items: center; 
                 padding: .625rem; 
-                background-color: rgba(0, 0, 0, 0.8); 
+                background-color: map-get($colores, color1); 
                 h3 {
-                    font-family: Mulish, sans-serif;
+                    font-family: $tipografiaSegunda;
                     position: absolute;
                     left: 0%;
                     font-size: 1.5em; 
@@ -102,7 +83,7 @@
                 p {
                     position: absolute;
                     right: 0%;
-                    font-family: Mulish, sans-serif;
+                    font-family: $tipografiaSegunda;
                     font-size: 1.5em;
                     font-weight: 300;
                     margin: 0rem .125rem 0rem 0rem;

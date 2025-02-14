@@ -11,14 +11,9 @@ footer{
         color: white;
     }
     section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flex(row, nowrap, space-around, center, 10px);
         div{
-            width: 21.875rem;
-            height: 12.5rem;
-            border: solid .0625rem #000;
-            border-radius: .3125rem;
+            @include boxmodel(21.875rem, 12.5rem, 0px, 10px, none, .3125rem);
             text-align: center;
             svg{
                 margin-top: .625rem;
@@ -30,6 +25,7 @@ footer{
                 font-size: 1.5em;
                 font-weight: 300;
                 color: white;
+                width: 100%;
             }
             p{
                 font-family: "Inika", serif;
@@ -37,6 +33,7 @@ footer{
                 font-weight: 300;
                 margin: .625rem .125rem;
                 color: white;
+                width: 100%;
             }
         }
         .boxFooterActive{
@@ -59,5 +56,6 @@ footer{
         font-size: 1.875rem;
         font-weight: 300;
         margin-top: .625rem;
+        padding: 10px;
     }
 }

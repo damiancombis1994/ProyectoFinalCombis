@@ -1,0 +1,48 @@
+@media(max-width: 400px){
+    header{
+        div{
+            h1{
+                font-size: 20px;
+            }
+        }
+    }
+    main{
+        section{
+            &:first-child{
+                .marcasHome{
+                    div{
+                        justify-content: space-evenly;
+                        img{
+                            &:nth-child(3){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .promocionesHome{
+                    div{
+                        article{
+                            width: 140px;
+                            .boxPromoHome{
+                                h3{
+                                    font-size: 14px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    footer{
+        section{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

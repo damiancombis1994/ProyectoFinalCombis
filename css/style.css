@@ -30,15 +30,17 @@ header div {
 }
 header div h1 {
   display: inline-block;
-  width: 100%;
-  text-align: center;
+  width: auto;
+  height: auto;
+  margin: 10px;
   padding: 0.5em;
-  flex-basis: 10em;
+  border: none;
+  border-radius: 1px;
+  text-align: center;
   font-family: "Playfair Display SC", serif;
 }
 header div h1 a {
-  text-decoration: none;
-  color: #fafafa;
+  color: rgb(255, 255, 255);
 }
 header div div {
   width: 9.375rem;
@@ -46,14 +48,15 @@ header div div {
 }
 header div div section {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  gap: 0;
+  width: 100%;
+  height: 100%;
 }
 header div div section a {
-  text-decoration: none;
   width: 2.1875rem;
   height: 2.1875rem;
 }
@@ -66,20 +69,20 @@ header div div section:last-child {
 }
 header .enlacesNav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 0.1875rem;
-  background-color: #e2e2c9;
+  align-items: center;
+  gap: 0;
+  background-color: rgba(136, 136, 121, 0.7411764706);
   margin: 0rem;
   padding: 10px;
-}
-header .enlacesNav li {
-  overflow: hidden;
 }
 header .enlacesNav li a {
   font-family: "Mulish", sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 header .enlacesNav li:hover {
   transform: scale(1.3);
@@ -98,7 +101,7 @@ header .btn-nav {
 }
 .marcasHome h2 {
   text-align: center;
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 2.5em;
   font-weight: 300;
   margin: 0.625rem 0rem 0rem 0rem;
@@ -107,6 +110,7 @@ header .btn-nav {
 .marcasHome div {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 0.625rem;
@@ -116,13 +120,14 @@ header .btn-nav {
   color: #fffefe;
 }
 .marcasHome div img {
+  width: 200px;
+  height: auto;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
   flex-grow: 1;
   object-fit: cover;
-  height: auto;
-  width: 200px;
-  border: solid 0.125rem #000;
-  border-radius: 0.75rem;
-  padding: 10px;
 }
 
 .bannerHome {
@@ -136,29 +141,31 @@ header .btn-nav {
 }
 
 .promocionesHome {
+  width: auto;
   height: auto;
-  margin-top: 0.625rem;
-  margin-bottom: 0.9375rem;
-  border: 3px solid #000000;
+  margin: 10px;
+  padding: 10px;
+  border: none;
   border-radius: 0.75rem;
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 .promocionesHome h2 {
   text-align: center;
-  font-family: Mulish, sans-serif;
-  font-size: 2.5em;
+  font-family: "Mulish", sans-serif;
   font-weight: 300;
+  font-size: 2.5em;
   margin: 0.625rem 0rem;
 }
 .promocionesHome h2 a {
-  text-decoration: none;
   color: rgb(251, 249, 249);
 }
 .promocionesHome div {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  gap: 0.625rem;
   margin-bottom: 10px;
 }
 .promocionesHome div i {
@@ -173,22 +180,24 @@ header .btn-nav {
   margin: 0;
 }
 .promocionesHome div article figure img {
-  border: 2px solid #000000;
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 .promocionesHome div article .boxPromoHome {
   display: flex;
-  position: relative;
-  height: 1.25rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0.625rem;
+  position: relative;
+  height: 1.25rem;
   padding: 0.625rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #000000;
 }
 .promocionesHome div article .boxPromoHome h3 {
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   position: absolute;
   left: 0%;
   font-size: 1.5em;
@@ -199,7 +208,7 @@ header .btn-nav {
 .promocionesHome div article .boxPromoHome p {
   position: absolute;
   right: 0%;
-  font-family: Mulish, sans-serif;
+  font-family: "Mulish", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   margin: 0rem 0.125rem 0rem 0rem;
@@ -222,12 +231,17 @@ footer h2 {
 footer section {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 footer section div {
   width: 21.875rem;
   height: 12.5rem;
-  border: solid 0.0625rem #000;
+  margin: 0px;
+  padding: 10px;
+  border: none;
   border-radius: 0.3125rem;
   text-align: center;
 }
@@ -241,6 +255,7 @@ footer section div h3 {
   font-size: 1.5em;
   font-weight: 300;
   color: white;
+  width: 100%;
 }
 footer section div p {
   font-family: "Inika", serif;
@@ -248,6 +263,7 @@ footer section div p {
   font-weight: 300;
   margin: 0.625rem 0.125rem;
   color: white;
+  width: 100%;
 }
 footer section .boxFooterActive svg {
   margin-top: 0.625rem;
@@ -266,6 +282,7 @@ footer h4 {
   font-size: 1.875rem;
   font-weight: 300;
   margin-top: 0.625rem;
+  padding: 10px;
 }
 
 .mainCatalogo {
@@ -355,7 +372,7 @@ footer h4 {
 
 .titlePromociones {
   text-align: center;
-  font-family: "Inika", serif;
+  font-family: "inika", sans-serif;
   font-size: 2.5em;
   font-weight: 300;
   margin: 0.625rem 0rem 0rem 0rem;
@@ -363,14 +380,13 @@ footer h4 {
 
 .promocionesHome h3 {
   text-align: left;
-  font-family: "Inika", serif;
+  font-family: "inika", sans-serif;
   font-size: 1.875rem;
   font-weight: 300;
   margin: 0rem 0rem 0.625rem 0.625rem;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 .promocionesHome h3 a {
-  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
@@ -382,6 +398,231 @@ footer h4 {
   margin: 0.625rem 0rem 0.625rem 0rem;
 }
 
+@media (max-width: 1005px) {
+  .marcasHome {
+    height: auto;
+  }
+  .marcasHome h2 {
+    font-size: 2.1em;
+  }
+  .marcasHome div img {
+    width: 150px;
+  }
+  .promocionesHome div article {
+    width: 210px;
+  }
+  .promocionesHome div article .boxPromoHome h3 {
+    font-size: 16px;
+  }
+  .promocionesHome div article .boxPromoHome p {
+    font-size: 16px;
+  }
+  footer {
+    height: 35rem;
+  }
+  footer section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+    align-items: center;
+    margin: 0rem 0.625rem;
+    margin-bottom: 0.625rem;
+    margin-top: 0.625rem;
+    justify-content: center;
+    justify-items: center;
+  }
+  footer h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 0.625rem;
+  }
+  .titlePromociones {
+    font-size: 30px;
+  }
+  .promocionesHome h3 {
+    font-size: 25px;
+  }
+  .mainCatalogo .boxCatalogo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  header nav .enlacesNav {
+    padding: 5px;
+  }
+  header nav .enlacesNav li a {
+    font-size: 15px;
+  }
+  .marcasHome h2 {
+    font-size: 1.5em;
+  }
+  .marcasHome div img:nth-child(2) {
+    display: none;
+  }
+  .marcasHome div i {
+    font-size: 10px;
+  }
+  .promocionesHome h2 {
+    font-size: 1.8em;
+  }
+  .promocionesHome div i {
+    font-size: 16px;
+  }
+  .promocionesHome div article {
+    width: 150px;
+  }
+  .promocionesHome div article .boxPromoHome h3 {
+    font-size: 14px;
+  }
+  .promocionesHome div article .boxPromoHome p {
+    font-size: 14px;
+  }
+  .mainCatalogo .boxCatalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    height: auto;
+  }
+  footer section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: space-around;
+    justify-items: center;
+  }
+  footer section .boxFooter {
+    width: 50%;
+    height: 9.375rem;
+  }
+  footer section .boxFooter svg {
+    width: 50px;
+    height: 50px;
+  }
+  footer section .boxFooter h3 {
+    width: auto;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  footer section .boxFooter p {
+    width: auto;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  footer section .boxFooterActive {
+    width: auto;
+    height: 150px;
+  }
+  footer section .boxFooterActive svg {
+    width: 60px;
+    height: 60px;
+  }
+  footer section .boxFooterActive h3 {
+    font-size: 15px;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  footer h4 {
+    font-size: 16px;
+  }
+  .titlePromociones {
+    font-size: 25px;
+  }
+  .promocionesHome h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 550px) {
+  header div {
+    height: 4.375rem;
+  }
+  header div h1 {
+    font-size: 1.375rem;
+    text-align: left;
+    width: auto;
+  }
+  header div div {
+    display: none;
+  }
+  header nav .enlacesNav {
+    display: none;
+  }
+  header nav .btn-nav {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+  }
+  header nav .btn-nav button {
+    background-color: transparent;
+    border: none;
+  }
+  main section:first-child .marcasHome h2 {
+    font-size: 1.2em;
+  }
+  main section:first-child .marcasHome div {
+    gap: 0.1875rem;
+  }
+  main section:first-child .marcasHome div img {
+    width: 80px;
+  }
+  main section:nth-child(3) article div .dArticle {
+    display: none;
+  }
+  .mainCatalogo .boxCatalogo {
+    gap: 10px;
+  }
+  .mainCatalogo .boxCatalogo a .card-container {
+    width: 100%;
+  }
+  .mainCatalogo .boxCatalogo a .card-container figure img {
+    object-fit: cover;
+  }
+  .mainCatalogo .boxCatalogo a .card-container div p {
+    width: auto;
+    font-size: 16px;
+  }
+  .mainCatalogo .boxCatalogo a .card-container div h4 {
+    width: auto;
+    font-size: 16px;
+  }
+  footer section .boxFooter h3 {
+    font-size: 15px;
+  }
+  footer section .boxFooter p {
+    font-size: 15px;
+  }
+  .titlePromociones {
+    font-size: 20px;
+  }
+  .promocionesHome h3 {
+    font-size: 16px;
+  }
+  .dArticle {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  header div h1 {
+    font-size: 20px;
+  }
+  main section:first-child .marcasHome div {
+    justify-content: space-evenly;
+  }
+  main section:first-child .marcasHome div img:nth-child(3) {
+    display: none;
+  }
+  main section:nth-child(3) .promocionesHome div article {
+    width: 140px;
+  }
+  main section:nth-child(3) .promocionesHome div article .boxPromoHome h3 {
+    font-size: 14px;
+  }
+  main section:nth-child(3) .promocionesHome div article .boxPromoHome p {
+    font-size: 14px;
+  }
+  footer section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .card-container {
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

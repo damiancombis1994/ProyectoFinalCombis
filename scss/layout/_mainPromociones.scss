@@ -1,6 +1,6 @@
 .titlePromociones{
     text-align: center;
-    font-family: "Inika", serif;
+    font-family: $tipografiaTercera;
     font-size: 2.5em;
     font-weight: 300;
     margin: .625rem 0rem 0rem 0rem;
@@ -8,14 +8,13 @@
 .promocionesHome{
   h3{
     text-align: left;
-    font-family: "Inika", serif;
+    font-family: $tipografiaTercera;
     font-size: 1.875rem;
     font-weight: 300;
     margin: 0rem 0rem .625rem .625rem;
-    color: #ffffff;
+    color: map-get($colores, color2);
     a{
-        text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: map-get($colores, color2);
     }
  }
 }
