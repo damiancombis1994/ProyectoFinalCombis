@@ -79,9 +79,8 @@ header .enlacesNav {
   padding: 10px;
 }
 header .enlacesNav li a {
-  font-family: "Mulish", sans-serif;
+  font-family: "inika", sans-serif;
   font-size: 1.25rem;
-  text-decoration: none;
   color: #000000;
 }
 header .enlacesNav li:hover {
@@ -237,20 +236,17 @@ footer section {
   align-items: center;
   gap: 10px;
 }
-footer section div {
-  width: 21.875rem;
-  height: 12.5rem;
-  margin: 0px;
-  padding: 10px;
-  border: none;
-  border-radius: 0.3125rem;
+footer section .boxFooter, footer section .boxFooterActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-footer section div svg {
+footer section .boxFooter svg, footer section .boxFooterActive svg {
   margin-top: 0.625rem;
   color: white;
 }
-footer section div h3 {
+footer section .boxFooter h3, footer section .boxFooterActive h3 {
   font-family: "Inika", serif;
   margin: 0.625rem 0.125rem;
   font-size: 1.5em;
@@ -258,7 +254,7 @@ footer section div h3 {
   color: white;
   width: 100%;
 }
-footer section div p {
+footer section .boxFooter p, footer section .boxFooterActive p {
   font-family: "Inika", serif;
   font-size: 1.5em;
   font-weight: 300;
@@ -419,7 +415,7 @@ footer h4 {
     font-size: 16px;
   }
   footer {
-    height: 35rem;
+    height: auto;
   }
   footer section {
     display: grid;
@@ -508,20 +504,21 @@ footer h4 {
     justify-content: space-around;
     justify-items: center;
   }
-  footer section .boxFooter {
+  footer section .boxFooter, footer section .boxFooterActive {
     width: 50%;
     height: 9.375rem;
   }
-  footer section .boxFooter svg {
+  footer section .boxFooter svg, footer section .boxFooterActive svg {
     width: 50px;
     height: 50px;
   }
-  footer section .boxFooter h3 {
+  footer section .boxFooter h3, footer section .boxFooterActive h3 {
     width: auto;
     font-size: 15px;
     white-space: nowrap;
   }
-  footer section .boxFooter p {
+  footer section .boxFooter p, footer section .boxFooterActive p {
+    text-align: center;
     width: auto;
     font-size: 15px;
     white-space: nowrap;
@@ -606,10 +603,10 @@ footer h4 {
     width: auto;
     font-size: 16px;
   }
-  footer section .boxFooter h3 {
+  footer section .boxFooter h3, footer section .boxFooterActive h3 {
     font-size: 15px;
   }
-  footer section .boxFooter p {
+  footer section .boxFooter p, footer section .boxFooterActive p {
     font-size: 15px;
   }
   .titlePromociones {

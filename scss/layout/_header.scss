@@ -40,9 +40,8 @@ header{
         padding: 10px;
         li {
             a {
-                font-family: "Mulish", sans-serif;
+                font-family: $tipografiaTercera; 
                 font-size: 1.25rem;
-                text-decoration: none;
                 color: map-get($colores, color1);
             }
             &:hover {
