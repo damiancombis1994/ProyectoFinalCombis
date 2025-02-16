@@ -91,6 +91,11 @@ header .btn-nav {
   display: none;
 }
 
+.icon-style, .promocionesHome div i, .marcasHome div i {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
 .marcasHome {
   height: auto;
   width: 96%;
@@ -104,7 +109,7 @@ header .btn-nav {
   font-size: 2.5em;
   font-weight: 300;
   margin: 0.625rem 0rem 0rem 0rem;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .marcasHome div {
   display: flex;
@@ -113,10 +118,6 @@ header .btn-nav {
   justify-content: space-around;
   align-items: center;
   gap: 0.625rem;
-}
-.marcasHome div i {
-  font-size: 1.5em;
-  color: #fffefe;
 }
 .marcasHome div img {
   width: 200px;
@@ -156,7 +157,7 @@ header .btn-nav {
   margin: 0.625rem 0rem;
 }
 .promocionesHome h2 a {
-  color: rgb(251, 249, 249);
+  color: rgb(255, 255, 255);
 }
 .promocionesHome div {
   display: flex;
@@ -166,10 +167,6 @@ header .btn-nav {
   align-items: center;
   gap: 0.625rem;
   margin-bottom: 10px;
-}
-.promocionesHome div i {
-  font-size: 1.5em;
-  color: #ffffff;
 }
 .promocionesHome div article {
   width: 18.75rem;
@@ -202,7 +199,7 @@ header .btn-nav {
   font-size: 1.5em;
   font-weight: 300;
   margin: 0rem 0rem 0rem 0.125rem;
-  color: #fafafa;
+  color: rgb(255, 255, 255);
 }
 .promocionesHome div article .boxPromoHome p {
   position: absolute;
@@ -211,7 +208,7 @@ header .btn-nav {
   font-size: 1.5em;
   font-weight: 300;
   margin: 0rem 0.125rem 0rem 0rem;
-  color: #fafafa;
+  color: rgb(255, 255, 255);
 }
 
 footer {
