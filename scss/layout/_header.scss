@@ -43,6 +43,9 @@ header{
                 font-family: $tipografiaTercera; 
                 font-size: 1.25rem;
                 color: map-get($colores, color1);
+                strong {
+                    font-weight: normal;
+                }
             }
             &:hover {
                 transform: scale(1.3);

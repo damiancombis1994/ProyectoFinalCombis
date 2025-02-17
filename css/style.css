@@ -83,6 +83,9 @@ header .enlacesNav li a {
   font-size: 1.25rem;
   color: #000000;
 }
+header .enlacesNav li a strong {
+  font-weight: normal;
+}
 header .enlacesNav li:hover {
   transform: scale(1.3);
   transition: 1s;
