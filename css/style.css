@@ -293,7 +293,10 @@ footer h4 {
   margin-bottom: 0.9375rem;
 }
 
-.boxContacto {
+.mainContacto {
+  height: 90vh;
+}
+.mainContacto .boxContacto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -303,63 +306,63 @@ footer h4 {
   background-color: #000000;
   overflow: hidden;
 }
-.boxContacto div {
+.mainContacto .boxContacto div {
   height: 100%;
 }
-.boxContacto div img {
+.mainContacto .boxContacto div img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-.boxContacto .boxFormContacto form {
+.mainContacto .boxContacto .boxFormContacto form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
   color: rgb(255, 255, 255);
   height: 100%;
   margin-top: 0.9375rem;
 }
-.boxContacto .boxFormContacto form h2 {
-  width: 600px;
+.mainContacto .boxContacto .boxFormContacto form h2 {
+  width: 37.5rem;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "Kameron", sans-serif;
 }
-.boxContacto .boxFormContacto form input {
-  width: 500px;
-  height: 40px;
-  margin: 10px 0px;
-  padding: 15px 0px;
+.mainContacto .boxContacto .boxFormContacto form input {
+  width: 31.25rem;
+  height: 2.5rem;
+  margin: 0.625rem 0rem;
+  padding: 0.9375rem 0rem;
   border: none;
-  border-radius: 5px;
-  font-family: "inika", sans-serif;
+  border-radius: 0.3125rem;
+  font-family: "Mulish", sans-serif;
   color: #000000;
   text-decoration: none;
-  border-bottom: rgb(255, 255, 255);
-  font-size: 20px;
+  border-bottom: 0.0625rem solid rgb(255, 255, 255);
+  font-size: 1.25rem;
 }
-.boxContacto .boxFormContacto form textarea {
-  width: 500px;
-  height: 150px;
-  margin: 10px 0px;
-  padding: 15px 0px;
+.mainContacto .boxContacto .boxFormContacto form textarea {
+  width: 31.25rem;
+  height: 9.375rem;
+  margin: 0.625rem 0rem;
+  padding: 0.9375rem 0rem;
   border: none;
-  border-radius: 5px;
-  font-family: "inika", sans-serif;
+  border-radius: 0.3125rem;
+  font-family: "Mulish", sans-serif;
   color: #000000;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
-.boxContacto .boxFormContacto form .btnEnviarForm {
-  width: 208px;
-  height: 30px;
-  margin: 5px 0px 15px 0px;
-  padding: 1px 15px;
+.mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
+  width: 13rem;
+  height: 1.875rem;
+  margin: 0.3125rem 0rem 0.9375rem 0rem;
+  padding: 0.0625rem 0.9375rem;
   border: none;
-  border-radius: 0px;
+  border-radius: 0rem;
   background-color: rgb(255, 255, 255);
   color: #000000;
   font-family: "inika", sans-serif;
@@ -460,6 +463,26 @@ footer h4 {
   main .boxItemDetail .itemDetail div:nth-child(2) h4 {
     font-size: 16px;
   }
+  .mainContacto {
+    margin: 15px 0px;
+  }
+  .mainContacto .boxContacto {
+    gap: 0rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form h2 {
+    width: 90%;
+  }
+  .mainContacto .boxContacto .boxFormContacto form input {
+    margin: 0.625rem 0.9375rem;
+    width: 90%;
+  }
+  .mainContacto .boxContacto .boxFormContacto form textarea {
+    margin: 0.625rem 0.9375rem;
+    width: 90%;
+  }
+  .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
+    width: 13rem;
+  }
 }
 @media (max-width: 768px) {
   header nav .enlacesNav {
@@ -546,6 +569,21 @@ footer h4 {
   }
   main .boxItemDetail .itemDetail div:nth-child(1) figure img {
     object-fit: cover;
+  }
+  .mainContacto {
+    margin: 0.9375rem 0rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form h2 {
+    width: 15.625rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form input {
+    margin: 0.625rem 0.625rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form textarea {
+    margin: 0.625rem 0.625rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
+    width: 6.75rem;
   }
 }
 @media (max-width: 550px) {
@@ -659,6 +697,36 @@ footer h4 {
   .mainItemDetail .boxItemDetail .itemDetail div:nth-child(2) .btnItemDetail div:nth-child(2) button {
     font-size: 16px;
   }
+  .mainContacto {
+    margin-bottom: 0.9375rem;
+    height: auto;
+  }
+  .mainContacto .boxContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form {
+    position: relative;
+  }
+  .mainContacto .boxContacto .boxFormContacto form h2 {
+    position: absolute;
+    top: -90px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #000000;
+  }
+  .mainContacto .boxContacto .boxFormContacto form input {
+    margin: 0.625rem 0.625rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form textarea {
+    margin: 0.625rem 0.625rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
+    width: 6.75rem;
+  }
 }
 @media (max-width: 400px) {
   header div h1 {
@@ -681,6 +749,18 @@ footer h4 {
   }
   footer section {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .mainContacto .boxContacto .boxFormContacto form h2 {
+    font-size: 1.125rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form input {
+    font-size: 1rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form textarea {
+    font-size: 1rem;
+  }
+  .mainContacto .boxContacto .boxFormContacto form button {
+    font-size: 1rem;
   }
 }
 .card-container {

@@ -45,4 +45,25 @@
             grid-template-columns: repeat(1,1fr);
         }
     }
+    .mainContacto{
+        .boxContacto{
+            .boxFormContacto{
+                form{
+                    h2{
+                        font-size: 1.125rem 
+                    }
+                    input{
+                        font-size: 1rem;
+                    }
+                    textarea{
+                        font-size: 1rem;
+                    }
+                    button{
+                        font-size: 1rem;
+                    }
+                    
+                }
+            }
+        }
+    }
 }

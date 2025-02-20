@@ -79,4 +79,30 @@
             }
         }
     }
+    .mainContacto{
+        margin: 15px 0px;
+        .boxContacto{
+            gap: 0rem;
+            .boxFormContacto{
+                form{
+                    h2{
+                        width: 90%;
+                        
+                    }
+                    input{
+                        margin: .625rem .9375rem;
+                        width: 90%;
+                    }
+                    textarea{
+                        margin: .625rem .9375rem;
+                        width: 90%;
+                        
+                    }
+                    .btnEnviarForm{
+                        width: 13rem;
+                    }
+                }
+            }
+        }
+    }
 }

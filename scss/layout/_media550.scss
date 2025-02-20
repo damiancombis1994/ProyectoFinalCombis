@@ -151,4 +151,35 @@
         }
     }
   }
+  .mainContacto{
+    margin-bottom: .9375rem;
+    height: auto;
+    .boxContacto{
+        @include grid(1fr,repeat(2, 1fr), 1rem);
+        .boxFormContacto{
+            form{
+                position: relative;
+                h2{
+                    position: absolute;
+                    top: -90px;
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+                    background-color: map-get($colores, color1 );
+                    
+                }
+                input{
+                    margin: .625rem .625rem;
+                }
+                textarea{
+                    margin: .625rem .625rem;
+                }
+                .btnEnviarForm{
+                    width: 6.75rem;
+                }
+            }
+        }
+    }
+   }
+
 }

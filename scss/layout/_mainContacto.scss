@@ -1,53 +1,56 @@
-.boxContacto{
-   @include grid(repeat(2, 1fr),1fr, 1rem);
-    height: 100%;
-    width: 100%;
-    background-color: map-get($colores, color1);
-    overflow: hidden;
-    div{
-        height: 100%; 
-        img{
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-        }
-    }
-    .boxFormContacto{
-        form{
-            @include flex(column, nowrap, center, center, 5px);
-            color: map-get($colores,color2);
-            height: 100%; 
-            margin-top: .9375rem;
-            h2{
-                width: 600px;
-                text-align: center;
-                color: map-get($colores, color2);
-                font-size: 20px;
-                font-family: $tipografiaCuarta;
-            }
-            input{
-                @include boxmodel(500px, 40px,10px 0px, 15px 0px, none, 5px);
-                font-family: $tipografiaTercera;
-                color: map-get($colores, color1);
-                text-decoration: none;
-                border-bottom: map-get($colores, color2);
-                font-size: 20px;   
-            }
-            textarea{
-                @include boxmodel(500px, 150px,10px 0px, 15px 0px, none, 5px);
-                font-family: $tipografiaTercera;
-                color: map-get($colores, color1);
-                font-size: 20px;  
-            }
-            .btnEnviarForm{
-                @include boxmodel(208px, 30px,5px 0px 15px 0px , 1px 15px, none, 0px);
-                background-color: map-get($colores, color2); ;
-                color: map-get($colores, color1);
-                font-family: $tipografiaTercera;
-                display: block;
-                text-align: center;
-            }
-        }
-    }
-    
+.mainContacto{
+    height: 90vh;
+    .boxContacto{
+        @include grid(repeat(2, 1fr),1fr, 1rem);
+         height: 100%;
+         width: 100%;
+         background-color: map-get($colores, color1);
+         overflow: hidden;
+         div{
+             height: 100%; 
+             img{
+                 object-fit: cover;
+                 height: 100%;
+                 width: 100%;
+             }
+         }
+         .boxFormContacto{
+             form{
+                 @include flex(column, nowrap, center, center, .3125rem);
+                 color: map-get($colores,color2);
+                 height: 100%; 
+                 margin-top: .9375rem;
+                 h2{
+                     width: 37.5rem;
+                     text-align: center;
+                     color: map-get($colores, color2);
+                     font-size: 1.25rem;
+                     font-family: $tipografiaCuarta;
+                 }
+                 input{
+                     @include boxmodel(31.25rem, 2.5rem,.625rem 0rem, .9375rem 0rem, none, .3125rem);
+                     font-family: $tipografiaSegunda;
+                     color: map-get($colores, color1);
+                     text-decoration: none;
+                     border-bottom: .0625rem solid map-get($colores, color2);
+                     font-size: 1.25rem; 
+                 }
+                 textarea{
+                     @include boxmodel(31.25rem, 9.375rem,.625rem 0rem, .9375rem 0rem, none, .3125rem);
+                     font-family: $tipografiaSegunda;
+                     color: map-get($colores, color1);
+                     font-size: 1.25rem;  
+                 }
+                 .btnEnviarForm{
+                     @include boxmodel(13rem, 1.875rem,.3125rem 0rem .9375rem 0rem , .0625rem .9375rem, none, 0rem);
+                     background-color: map-get($colores, color2); ;
+                     color: map-get($colores, color1);
+                     font-family: $tipografiaTercera;
+                     display: block;
+                     text-align: center;
+                 }
+             }
+         }
+         
+     }
 }
