@@ -105,4 +105,17 @@
             }
         }
     }
+    .mainCart{
+        .cartHeader{ 
+            h2{
+                font-size: 25px;
+            }
+        }
+        .viewCart{
+            gap: 1rem 0rem;
+            article{
+                margin: 5px;
+            }
+        }
+    }
 }

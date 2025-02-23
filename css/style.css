@@ -437,10 +437,11 @@ footer h4 {
 .mainCart .viewCart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fill, minmax(300px, max-content));
   gap: 1rem;
-  height: 100%;
+  height: auto;
   justify-content: space-around;
+  margin: 10px 0px;
 }
 .mainCart .viewCart article {
   display: flex;
@@ -449,12 +450,13 @@ footer h4 {
   justify-content: center;
   align-items: center;
   gap: 0;
-  width: 250px;
+  width: auto;
   height: auto;
   margin: 10px;
   padding: 5px;
   border: 1px solid black;
   border-radius: 5px;
+  overflow: hidden;
   position: relative;
 }
 .mainCart .viewCart article figure {
@@ -605,6 +607,15 @@ footer h4 {
   .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
     width: 13rem;
   }
+  .mainCart .cartHeader h2 {
+    font-size: 25px;
+  }
+  .mainCart .viewCart {
+    gap: 1rem 0rem;
+  }
+  .mainCart .viewCart article {
+    margin: 5px;
+  }
 }
 @media (max-width: 768px) {
   header nav .enlacesNav {
@@ -706,6 +717,18 @@ footer h4 {
   }
   .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
     width: 6.75rem;
+  }
+  .mainCart .cartHeader h2 {
+    font-size: 20px;
+  }
+  .mainCart .viewCart {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mainCart .checkoutContainer p {
+    font-size: 16px;
+  }
+  .mainCart .checkoutContainer button {
+    font-size: 16px;
   }
 }
 @media (max-width: 550px) {
@@ -849,6 +872,16 @@ footer h4 {
   .mainContacto .boxContacto .boxFormContacto form .btnEnviarForm {
     width: 6.75rem;
   }
+  .mainCart .cartHeader {
+    background-color: rgba(136, 136, 121, 0.7411764706);
+  }
+  .mainCart .cartHeader h2 {
+    color: #000000;
+    font-weight: 400;
+  }
+  .mainCart .viewCart {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 400px) {
   header div h1 {
@@ -882,6 +915,12 @@ footer h4 {
     font-size: 1rem;
   }
   .mainContacto .boxContacto .boxFormContacto form button {
+    font-size: 1rem;
+  }
+  .mainCart .viewCart article h3 {
+    margin-top: 2px;
+  }
+  .mainCart .viewCart article p {
     font-size: 1rem;
   }
 }

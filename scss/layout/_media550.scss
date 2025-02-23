@@ -181,5 +181,17 @@
         }
     }
    }
+   .mainCart{
+    .cartHeader{
+        background-color: map-get($colores , color3);
+        h2{
+            color: map-get($colores, color1);
+            font-weight: 400;
+        }
+    }
+    .viewCart{
+        grid-template-columns:repeat(2,1fr);   
+    }
+   }
 
 }
