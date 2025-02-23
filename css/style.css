@@ -60,12 +60,9 @@ header div div section a {
   width: 2.1875rem;
   height: 2.1875rem;
 }
-header div div section a img {
+header div div section a .carritoIcon, header div div section a img {
   width: 100%;
   height: 100%;
-}
-header div div section:last-child {
-  margin-left: -0.4375rem;
 }
 header .enlacesNav {
   display: flex;
@@ -122,6 +119,9 @@ header .btn-nav {
   align-items: center;
   gap: 0.625rem;
 }
+.marcasHome div i:hover {
+  cursor: pointer;
+}
 .marcasHome div img {
   width: 200px;
   height: auto;
@@ -170,6 +170,9 @@ header .btn-nav {
   align-items: center;
   gap: 0.625rem;
   margin-bottom: 10px;
+}
+.promocionesHome div i:hover {
+  cursor: pointer;
 }
 .promocionesHome div article {
   width: 18.75rem;
@@ -398,6 +401,9 @@ footer h4 {
   margin: 0.625rem 0rem 0.625rem 0rem;
 }
 
+.mainCart {
+  margin-bottom: 10px;
+}
 .mainCart .cartHeader {
   display: flex;
   flex-direction: row;
@@ -429,24 +435,27 @@ footer h4 {
   cursor: pointer;
 }
 .mainCart .viewCart {
-  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
   gap: 1rem;
+  height: 100%;
   justify-content: space-around;
 }
 .mainCart .viewCart article {
   display: flex;
-  position: relative;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  width: 250px; /* Reducir el ancho */
-  height: auto;
   align-items: center;
-  border: 1px solid black;
-  border-radius: 5px;
+  gap: 0;
+  width: 250px;
+  height: auto;
   margin: 10px;
   padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
 }
 .mainCart .viewCart article figure {
   position: relative;
@@ -465,13 +474,13 @@ footer h4 {
   text-align: center;
   font-size: 1.5rem;
   margin: 1px 0px 5px 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", serif;
 }
 .mainCart .viewCart article p {
   text-align: center;
   font-size: 1.2rem;
   margin: -1px 0px 5px 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", serif;
   padding: 5px;
 }
 .mainCart .viewCart article .btnDelete {
@@ -479,11 +488,16 @@ footer h4 {
   top: 0;
   right: 0;
 }
+.mainCart .viewCart article .btnDelete:hover {
+  cursor: pointer;
+}
 .mainCart .checkoutContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
   width: 100%;
   height: 38px;
   background-color: #000000;
@@ -499,6 +513,8 @@ footer h4 {
   height: 30px;
   font-size: 18px;
   font-family: "Mulish", sans-serif;
+  border-radius: 5px;
+  padding: 0px 10px;
 }
 .mainCart .checkoutContainer button:hover {
   cursor: pointer;

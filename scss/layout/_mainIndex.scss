@@ -20,6 +20,9 @@
         @include flex(row, nowrap, space-around, center, .625rem);
         i{
             @extend .icon-style;
+            &:hover{
+                cursor: pointer;
+            }
         }
         img{
             @include boxmodel(200px, auto, 0px, 10px, none, 0px);
@@ -54,7 +57,10 @@
         @include flex(row, nowrap, space-around, center, .625rem);
         margin-bottom:10px; 
         i {
-            @extend .icon-style; 
+            @extend .icon-style;
+            &:hover{
+                cursor: pointer;
+            } 
         }
         article {
             width: 18.75rem;
