@@ -1,7 +1,7 @@
 .mainCatalogo{
     margin-top: 1em;
     .boxCatalogo{
-        @include grid(repeat(4, 1fr),auto, 20px);
+        @include grid(repeat(4, 1fr),repeat(auto-fill, minmax(min-content, max-content)), 20px);
         margin-bottom: .9375rem;
     }
 }
