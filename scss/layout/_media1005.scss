@@ -11,21 +11,6 @@
                 }
          }  
     }
-    .promocionesHome{
-        div{
-            article {
-                width: 210px;
-                .boxPromoHome{
-                    h3 {
-                        font-size: 16px;
-                    }
-                    p{
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-    } 
     footer{
         height: auto;
         section{
@@ -47,11 +32,6 @@
     }
     .titlePromociones{
         font-size: 30px;
-    }
-    .promocionesHome {
-        h3{
-        font-size: 25px;
-        }    
     }
     .mainCatalogo{
         .boxCatalogo{
@@ -119,4 +99,16 @@
             }
         }
     }
+    main{
+        .boxCarru{
+            .carruSlider{
+                .carruFigure{
+                    margin: 5px 15px;
+                    width: 250px;
+                    height: 250px; 
+                }
+            }
+        }
+    }
+    
 }

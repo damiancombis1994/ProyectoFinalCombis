@@ -92,14 +92,6 @@
         }
      }
    }
-   .titlePromociones{
-    font-size: 20px;
-   }
-   .promocionesHome{
-       h3{
-         font-size: 16px;
-       }
-    }
     .dArticle{
         display: none;
     }
@@ -193,5 +185,16 @@
         grid-template-columns:repeat(2,1fr);   
     }
    }
+   main{
+    .boxCarru{
+        .carruSlider{
+            .carruFigure{
+                margin: 3px 8px;
+                width: 200px;
+                height: 200px; 
+            }
+        }
+    }
+  }
 
 }

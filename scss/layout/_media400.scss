@@ -20,24 +20,6 @@
                     }
                 }
             }
-            &:nth-child(3){
-                .promocionesHome{
-                    div{
-                        article{
-                            width: 140px;
-                            .boxPromoHome{
-                                h3{
-                                    font-size: 14px;
-                                }
-                                p{
-                                    font-size: 14px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            
         }
     }
     footer{
@@ -77,5 +59,19 @@
                 }
             } 
         }
-       }
+    }
+    main{
+        .boxCarru{
+            h4{
+                font-size: 1.2em;
+            }
+            .carruSlider{
+                .carruFigure{
+                    margin: 3px 6px;
+                    width: 160px;
+                    height: 160px; 
+                }
+            }
+        }
+    }
 }

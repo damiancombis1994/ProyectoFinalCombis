@@ -26,27 +26,6 @@
         }
        }
    } 
-   .promocionesHome{
-       h2{
-        font-size: 1.8em;
-       }
-       div{
-          i{
-            font-size: 16px;
-          }
-          article{
-            width: 150px;
-            .boxPromoHome{
-                h3 {
-                    font-size: 14px;
-                }
-                p{
-                    font-size: 14px;
-                }
-            }
-         }
-       }
-   }
    .mainCatalogo{
         .boxCatalogo{
         grid-template-columns: repeat(2, 1fr);
@@ -94,12 +73,6 @@
     h4{
         font-size: 16px;
     }
-   }
-   .titlePromociones{
-    font-size: 25px;
-   }
-   .promocionesHome h3{
-    font-size: 20px;
    }
    main{
     .boxItemDetail{
@@ -154,5 +127,16 @@
         }
     }
   }
+  main{
+    .boxCarru{
+        .carruSlider{
+            .carruFigure{
+                margin: 5px 10px;
+                width: 230px;
+                height: 230px; 
+            }
+        }
+    }
+}
 
 }
